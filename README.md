@@ -8,6 +8,8 @@ This repository is divided into the following sections:
 Summaries of key concepts and techniques in Generative AI.
 ### Tutorials: 
 Hands-on guides and implementations of foundational models and ideas.
+### Presentations:
+Slides and talks on Generative AI topics.
 ### Projects: 
 Practical applications of Generative AI in real-world scenarios.
 ### Resources: 
