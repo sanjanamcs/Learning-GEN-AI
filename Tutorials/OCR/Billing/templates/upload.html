@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+  
+<!-- Before you start, please sign up for an OCR.space API key: https://ocr.space/ocrapi -->
+<!-- More info about the endpoints: https://ocr.space/ocrapi#PostParameters -->
+<!-- Always use POST and not GET to avoid issues with the CORS policy -->
+<!-- Sandbox API for testing: https://apipro1.ocr.space/space/parse/image -->
+
+    <form method="post" action="https://api.ocr.space/parse/image" enctype="multipart/form-data">
+        <input type="hidden" name="apikey" value="K81568317388957"/>
+
+        <!-- Set the language of the input file. List of all supported languages: https://ocr.space/ocrapi#Language -->
+        <input type="hidden" name="language" value="eng"/>
+
+        <!-- Set isOverlayRequired to true if you want to get the output with bounding boxes drawn around the recognized letters. If you don't need it, remove this line or set the value to false. -->
+        <input type="hidden" name="isOverlayRequired" value="true"/>
+
+        <!-- The image for the OCR -->
+        <input type="file" name="file" accept=".jpg, .jpeg, .png, .bmp, .tif, .tiff, .pdf"/>
+        
+        <!-- Submit the form -->
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
